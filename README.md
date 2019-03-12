@@ -16,7 +16,7 @@ It will literally just print out a sha256 hash to stdout. I recommend running it
 ## findhttpsha256.py:
 Searches for a given http.sha256, returns IP:Port to stdout for piping to other tools. Suggested for use with `mkhttpsha256.py` like so to "find more of these fucking boxes":
 ```
-./mkhttpsha256.py http://interesting.lol:80 | ./findhttpsha256.py
+./mkhttpsha256.py http://interesting.lol:80 | xargs ./findhttpsha256.py
 [prints list of new and exciting IP:Port combos]
 ```  
 If given the "-c" flag, will just print the amount of matches instead.
