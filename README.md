@@ -22,6 +22,18 @@ Searches for a given http.sha256, returns IP:Port to stdout for piping to other 
 If given the "-c" flag, will just print the amount of matches instead.
 Note: Make sure to put in your API key to use this script. 
 
+## example_page_iter.py
+This is an example script that handles page iterating of results. It is HORRIBLE, and a workaround. It does a query for Busybox devices in Italy, and returns either all the results (until you run out of credits!), or a limited number (using -l PAGENUM). It is recommended to run this with "-c" first to determine how many pages are needed. If you burn all your credits using this, don't blame me. I fucking warned you. Example use:
+```
+(venv) user@box:~/projects/be-utils$ python example_page_iter.py -c
+Results: 778952
+Will need to get 38948 pages...
+(venv) user@box:~/projects/be-utils$ python example_page_iter.py -l 10 | wc -l
+200
+(venv) user@box:~/projects/be-utils$ 
+```
+Note: Make sure to put in your API key to use this script.
+
 ## licence:
 MIT licence.
 
