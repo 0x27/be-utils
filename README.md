@@ -41,6 +41,7 @@ Note: Make sure to put in your API key to use this script.
 MIT licence.
 
 ## bugs/issues:
-[use the issue tracker](https://github.com/0x27/be-utils/issues). I'll be ignoring "python3 pls" issues for the current time.
+[use the issue tracker](https://github.com/0x27/be-utils/issues). I'll be ignoring "python3 pls" issues for the current time due to being a fossil who hates putting brackets in print statements.
 
-## 
+## contact
+Ping me on the BE Slack (infodox) or on [twitter](https://twitter.com/info_dox) 
